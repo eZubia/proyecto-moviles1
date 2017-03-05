@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_listas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:text="Clave:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="11dp"
+        android:id="@+id/txtClave"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Aquí va tu nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCeldaNombre"
+        android:layout_below="@+id/txtClave"
+        android:layout_alignLeft="@+id/txtClave"
+        android:layout_alignStart="@+id/txtClave" />
+
+    <TextView
+        android:text="Aquí va tu descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCeldaDescripcion"
+        android:layout_below="@+id/txtDescripcion"
+        android:layout_alignLeft="@+id/txtDescripcion"
+        android:layout_alignStart="@+id/txtDescripcion" />
+
+    <TextView
+        android:text="Descripción:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDescripcion"
+        android:layout_above="@+id/txtCeldaNombre"
+        android:layout_toRightOf="@+id/txtCeldaNombre"
+        android:layout_toEndOf="@+id/txtCeldaNombre"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp" />
+
+</RelativeLayout>

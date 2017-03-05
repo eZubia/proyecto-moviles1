@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_proyects"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="brothersideas.mx.dragonproyect.MenuActivity">
+
+    <Button
+        android:text="Ver Proyectos Terminados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:id="@+id/btnProyectosT"
+        android:layout_alignTop="@+id/btnProyectos"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Nuevo Proyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/btnNuevoP"
+        android:layout_below="@+id/btnProyectosT"
+        android:layout_alignLeft="@+id/btnProyectos"
+        android:layout_alignStart="@+id/btnProyectos"
+        android:onClick="nuevoProyecto"/>
+
+    <Button
+        android:text="Proyectos Eliminados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnProyectosEliminados"
+        android:layout_below="@+id/btnNuevoP"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Ver Proyectos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="228dp"
+        android:id="@+id/btnProyectos"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="proyectos"/>
+
+</RelativeLayout>
