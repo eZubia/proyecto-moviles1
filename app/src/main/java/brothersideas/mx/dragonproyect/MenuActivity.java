@@ -28,7 +28,6 @@ public class MenuActivity extends AppCompatActivity {
         verProyectos = (Button) findViewById(R.id.btnProyectos);
         terminados = (Button) findViewById(R.id.btnProyectosT);
         nuevoProyecto = (Button) findViewById(R.id.btnNuevoP);
-        eliminados = (Button) findViewById(R.id.btnProyectosEliminados);
         View.OnClickListener oyente = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,15 +37,6 @@ public class MenuActivity extends AppCompatActivity {
             }
         };
         terminados.setOnClickListener(oyente);
-        View.OnClickListener oyente2 = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getBaseContext(), ProyectosExtras.class);
-                i.putExtra("isFinish", false);
-                startActivity(i);
-            }
-        };
-        eliminados.setOnClickListener(oyente2);
     }
 
     public void proyectos(View v){

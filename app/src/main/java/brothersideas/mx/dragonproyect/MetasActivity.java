@@ -60,6 +60,13 @@ public class MetasActivity extends AppCompatActivity {
         });
     }
 
+    public void terminarProyecto(View v){
+        MenuActivity.proyectos.remove(actualProyect);
+        MenuActivity.proyectosTerminados.add(actualProyect);
+        Intent i = new Intent(getBaseContext(), MenuActivity.class);
+        startActivity(i);
+    }
+
     class Adapter extends BaseAdapter {
 
         @Override

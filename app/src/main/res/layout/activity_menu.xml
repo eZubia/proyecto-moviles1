@@ -32,15 +32,6 @@
         android:onClick="nuevoProyecto"/>
 
     <Button
-        android:text="Proyectos Eliminados"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:id="@+id/btnProyectosEliminados"
-        android:layout_below="@+id/btnNuevoP"
-        android:layout_centerHorizontal="true" />
-
-    <Button
         android:text="Ver Proyectos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,5 +40,11 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="proyectos"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dragon"
+        android:id="@+id/imageView" />
 
 </RelativeLayout>
